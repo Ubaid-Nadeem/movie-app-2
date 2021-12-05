@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+        background-color: #373b69;
+}
+#content{
+display: none;
+}
+header{
+  background-color: #1f213b;
+  padding: 15px;  
+  text-align: right;
+}
+header input{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #1f213b;
+    
+}
+header input::placeholder{
+    color: white;
+}
+header input:focus{
+    outline: none;
+    background-color: #373b69;
+    color: white;
+}
+#main{
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+.movies{
+    
+    background-color: #7076bd;
+    width: 200px;   
+    border-radius: 3px;
+    /* margin: 10px; */
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+
+}
+.movies img{
+    width: 100%;
+display: inline-block;
+
+}
+h3{
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 5px;
+}
+.movies-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    color: #eee;
+    /* text-align: center; */
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+.movies-info span{
+    background-color: #1f213b;
+    padding: 4px 5px;   
+    border-radius: 3px;
+    font-size: 12px;
+}
+.movies-info .green{
+    color: rgb(32, 136, 32);
+}
+.movies-info .orange{
+    color: orange;
+}
+.movies-info .red{
+    color: rgb(197, 24, 24);
+}
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+text-align: center;
+}
+.preloader img{
+    width: 200px;
+}
+
+@media screen and (max-width: 400px){
+    .movies{
+    
+        background-color: #7076bd;
+        width: 100px;   
+        /* height: 200px; */
+        border-radius: 3px;
+        /* margin: 10px; */
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+    
+    }
+    .movies img{
+        width: 100%;
+    display: inline-block;
+    
+    }
+    h3{
+        font-size: 9px;
+        font-weight: lighter;
+        padding: 1px;
+    }
+    .movies-info{
+        
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 10px;
+        color: #eee;
+        /* text-align: center; */
+        align-items: center;
+        letter-spacing: 0.5px;
+    }
+    .movies-info span{
+        background-color: #1f213b;
+        padding: 1px 2px;   
+        border-radius: 3px;
+        font-size: 8px;
+    }
+       
+}
